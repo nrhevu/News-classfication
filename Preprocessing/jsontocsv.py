@@ -2,11 +2,11 @@ import json
 import csv
 from xxx import preprocess, combine_text
 
-with open('./Pre-processing/resources/News_Category_Dataset_v2.json') as file:
+with open('./Preprocessing/resources/News_Category_Dataset_v2.json') as file:
     data = json.load(file)
 
 #News_Category_Dataset_v2.json
-fname = "Pre-processing/output.csv"
+fname = "./Preprocessing/output.csv"
 
 with open(fname, "w", encoding="utf-8") as file:
     csv_file = csv.writer(file,lineterminator='\n')

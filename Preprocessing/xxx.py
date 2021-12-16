@@ -53,8 +53,8 @@ def combine_text(list_of_text):
     return combined_text
 
 def preprocess(text):
-    #txt = clean_text(text)
-    txt = remove_stopwords(text)
+    txt = clean_text(text)
+    txt = remove_stopwords(txt)
     txt = combine_text(txt)
     return txt
 
